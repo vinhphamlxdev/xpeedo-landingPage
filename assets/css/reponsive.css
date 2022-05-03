@@ -1,0 +1,339 @@
+/* HIDE ON PC */
+@media (min-width: 1024px) {
+   
+}
+@media only screen and (max-width:1242px) {
+    .submit-form{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+   
+}
+
+@media only screen and (max-width:1226px) {
+    .features-item{
+        padding: 20px 14px;
+    }
+  
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+   
+
+}
+/* mobile and tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+     /* btn effect */
+     .menu-icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+      background-color: var(--white);
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+
+    }
+    .hamburger{
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #888;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+    }
+    .hamburger::after,
+    .hamburger::before{
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #888; 
+        transition: 0.5s;
+        content: "";
+    }
+    .menu-icon.active .hamburger{
+        background: transparent;
+
+    }
+    .hamburger::after{
+        top: 10px;
+    }
+    .hamburger::before{
+        top: -10px;
+    }
+    .menu-icon.active .hamburger::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .menu-icon.active .hamburger::after{
+        top: 0;
+        transform: rotate(135deg);
+    }
+  /* end */
+    .header{
+        padding: 34px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .header-container{
+        position: relative;
+        z-index: 999;
+        justify-content: space-between;
+    }
+    .sticky .header-navbar{
+        top: calc(100% + 24px);
+    }
+    .header-navbar{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: calc(100% + 34px);
+        background-color: #fff;
+       box-shadow: 0 15px 20px 0 rgb(0 0 0 / 10%);
+       padding: 12px;
+       clip-path: inset(0 0 100% 0);
+       transition: 0.4s;
+        
+    }
+    .header-navbar.active{
+        clip-path: inset(0 0 0 0);
+    }
+   
+    .navbar-item{
+        margin-left: 0;
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+       
+       
+    }
+   
+    .navbar-link{
+        color: var(--txt-color) ;
+        display: block;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+    .header.sticky{
+        padding: 24px 0;
+    }
+    .sticky .menu-icon{
+        background: var(--primary-bg);
+    }
+    .sticky .hamburger::after,
+    .sticky .hamburger::before,
+    .sticky .hamburger{
+        background-color: #fff;
+    }
+   
+    .sider-heading{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .slider-btn .playstore-btn{
+        padding: 12px 25px;
+        font-weight: 500;
+    }
+    .client-container h2{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .client-img{
+        justify-content: center;
+    }
+    .features-container{
+        padding: 0 90px;
+        
+    }
+   
+    .section{
+        padding: 60px 0;
+    }
+    .app-container{
+        padding-bottom: 130px;
+    }
+    .features-section,
+    .client-section{
+        padding:  60px 0;
+    }
+    .video-item{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .achievement-item{
+        margin-top: 40px;
+    }
+    .team-item{
+        margin-top: 30px;
+    }
+    .features-container h2{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-top: 5px;
+    }
+    .form-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .form input{
+        width: 90%;
+    }
+    .description-list li{
+        margin-top: 40px;
+    }
+    .text-center{
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+    .submit-form{
+        padding: 0;
+    }
+    .mt-175{
+        margin-top: 140px;
+    }
+    .features-item{
+        margin-top: 30px;
+    }
+    .navbar-link::after{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .sider-heading{
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .slider-btn{
+        flex-direction: column;
+    }
+    .slider-btn .appstore-btn{
+        margin-right: 0;
+        margin-top: 10px;
+        width: 50%;
+    }
+    .slider-btn .playstore-btn{
+        width: 50%;
+        padding: 15px 30px;
+
+    }
+    .home-slider.row{
+        padding: 0 10px;
+    }
+    .app-container{
+        padding-bottom: 80px;
+    }
+    .section{
+        padding: 50px 0;
+    }
+    .client-item img{
+        width: 60%;
+    }
+    .features-section, .client-section{
+        padding: 50px 0;
+    }
+    .features-container{
+        padding: 0;
+    }
+    .description-item{
+        padding: 0 14px;
+    }
+    .video-section{
+        padding: 50px 0;
+    }
+    .video-container.row{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .video-item .description-title p{
+        margin: 20px 0;
+    }
+    .achievement-item i{
+        width: 60px;
+        height: 60px;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 60px;
+    }
+    .achievement-item h3{
+        font-size: 2.4rem;
+    }
+    .achievement-item p{
+        font-size: 1.4rem;
+    }
+    .achievement-section{
+        padding: 50px 0;
+    }
+    .footer-container,
+    .contact-container,
+    .newsletter-container,
+    .question-container,
+    .price-container,
+    .download-container,
+    .team-container,
+    .features-single,
+    .review-container{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .question-item img{
+        width: 100%;
+    }
+    .submit-form-container{
+        flex-direction: column;
+    }
+    .form input{
+        width: 100%;
+    }
+    .btn-submit{
+        width: 100%;
+    }
+    .description-list li{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .footer-section{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+   
+    .modal-video iframe{
+        width: 350px;
+        height: 200px;
+    }
+    .header{
+        padding: 18px 12px;
+    }
+    .header.sticky {
+        padding: 18px 12px;
+    }
+    .sticky .header-navbar,
+    .header-navbar{
+        top: calc(100% + 18px);
+    }
+    .mt-10{
+        margin-top: 10px;
+    }
+    .description-item{
+        margin-bottom: 50px;
+    }
+   
+
+} 
